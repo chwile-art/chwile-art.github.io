@@ -1,0 +1,67 @@
+baseURL: https://chwile.art # todo: change site url.
+title: Chwile.art # todo: change site name.
+defaultContentLanguage: 'pl'
+theme: eternity
+googleAnalytics: '' # todo: set your analytics id.
+
+params:
+  image: /images/banner.png
+  logo: logo.png # todo: add your custom logo to static/
+  subtitle: Przygoda portfolio fotograficzne
+  copyright: All rights reserved. # todo: set your copyright type.
+  author: Chwile.art # todo: set your full name.
+  dontShowSource: false # please, do not do this :)
+  portfolio:
+    columns:
+      desktop:
+        default: 3
+      mobile:
+        default: 2
+  socials:
+    # todo: add your social accounts.
+    - icon: 'far fa-envelope fa-lg'
+      url: 'mailto:js@chwile.art'
+      landing: true
+  homepage: "/tags/archiwum" # todo: uncomment homepage, homepage link is mostly same with menu.main[0]
+  specialPages:
+    - zdjecia
+    - archiwum
+  bypassWelcomePage: true # redirects "/" to "homepage" when it's true.
+  plausible: '' # todo: set your plausible id.
+  disableWelcomePageBackground: true # disables the background image on the homepage
+  disableRadius: false
+  moveIt: false # Moves Title and Meta info down, only visible when scroll.
+  disableAlwaysResize: false
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  tags: ":slug/"
+
+menu:
+  main:
+    - name: O stronie
+      url: /o-stronie
+      weight: 1
+    - name: Natura
+      url: /natura
+      weight: 2
+    - name: Miasto
+      url: /miasto
+      weight: 2
+    - name: Makro
+      url: /makro
+      weight: 3
+    - name: Ludzie
+      url: /ludzie
+      weight: 4
+    - name: Archiwum
+      url: /archiwum
+      weight: 5
