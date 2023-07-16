@@ -1,0 +1,5 @@
+baseURL = 'https://chwile.art/'
+languageCode = 'pl-pl'
+title = 'chwile'
+
+theme = 'eternity'
